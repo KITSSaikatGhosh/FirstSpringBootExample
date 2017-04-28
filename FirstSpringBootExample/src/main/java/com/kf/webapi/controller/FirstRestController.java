@@ -9,11 +9,11 @@ public class FirstRestController {
 
 	@RequestMapping("/sayHello")
 	public String welcome() {
-		return "Hi User!!! Welcome to First Spring Boot Rest Application";
+		return "Hi User!!! Welcome to First Spring Boot Rest Docker Application";
 	}
 	
 	@GetMapping("/sayDover")
 	public String getDover() {
-		return "Hi User!!! Thanks for Visiting Dover Square";
+		return "Hi User!!! Thanks for Visiting Docker Dover Square";
 	}
 }

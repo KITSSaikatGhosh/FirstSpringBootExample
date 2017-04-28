@@ -20,7 +20,7 @@ public class HomeController {
 	
 	@RequestMapping("/sayLuck")
 	public String sayLuck(Map<String, Object> model) {
-		message="Good Luck !! You are in Spring Boot Maven App";
+		message="Good Luck !! You are in Spring Boot Maven Docker App";
 		model.put("message", this.message);
 		return "luckPage";
 	}

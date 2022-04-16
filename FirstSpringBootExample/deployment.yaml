@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: firstspringbootexample
+  name: firstspringbootexample
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: firstspringbootexample
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: firstspringbootexample
+    spec:
+      containers:
+      - image: saikat17ster/firstspringbootexample
+        name: firstspringbootexample
+        resources: {}
+status: {}

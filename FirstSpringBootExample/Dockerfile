@@ -1,5 +1,5 @@
 FROM java:8
-VOLUME /tmp
+VOLUME /tmp1
 ADD target/firstspringbootexample.war app.war
 RUN sh -c 'touch /app.war'
 ENV JAVA_OPTS=""

@@ -18,7 +18,7 @@ spec:
         app: firstspringbootexample
     spec:
       containers:
-      - image: saikat17ster/firstspringbootexample
+      - image: saikat17ster/firstspringboot:v1
         name: firstspringbootexample
         resources: {}
 status: {}

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: firstspringboot-k8s-svc
+spec:
+  selector:
+    app: firstspringboot
+  ports:
+    - protocol: "TCP"
+      port: 8080
+      targetPort: 8080
+  type: NodePort

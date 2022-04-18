@@ -3,22 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: firstspringbootexample
-  name: firstspringbootexample
+    app: firstspringboot
+  name: firstspringboot
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: firstspringbootexample
+      app: firstspringboot
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
-        app: firstspringbootexample
+        app: firstspringboot
     spec:
       containers:
       - image: saikat17ster/firstspringboot:v1
-        name: firstspringbootexample
+        name: firstspringboot
         resources: {}
+        ports:
+          - containerPort: 8080
 status: {}
